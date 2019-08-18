@@ -6,14 +6,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend 
+      app: frontend
   template:
     metadata:
       labels:
         app: frontend
     spec:
       containers:
-      - image: phico/frontend:2.0
+      - image: dimalegeza/helm-frontend:1.0
         imagePullPolicy: Always
         name: frontend
         ports:
@@ -30,7 +30,3 @@ spec:
             configMapKeyRef:
               name: frontend-config
               key: guestbook-name
-
-
-              
-
