@@ -42,3 +42,4 @@ typings
 .DS_Store
 Thumbs.db
 /app/guestbook/dist/*.tgz
+/chart/guestbook/charts/*.tgz
